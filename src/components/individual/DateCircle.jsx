@@ -7,13 +7,20 @@ const DateCircleCss = styled.div`
     border-radius: 100%;
     background: #fff;
     border: 2px solid #d9d9d9;
+    top: 47%;
+    position: absolute;
     & > p {
         margin:3px 0 0 15px;
       }
 `   
 
 
-export default function DateCircle({day, month}) {
+export default function DateCircle({date}) {
+
+    const monthNames = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN",
+        "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+    const month = monthNames[date.getMonth()];
+    const day = date.getDay()
    
     return (
         <DateCircleCss>

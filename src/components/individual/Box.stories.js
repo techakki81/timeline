@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Box   from './Box';
+import Box  from './Box.stories';
 
 //👇 This default export determines where your story goes in the story list
 export default {
@@ -14,7 +14,5 @@ const Template = (args) => <Box {...args} />;
 export const FirstStory = Template.bind({});
 
 FirstStory.args = {
-  date:"21 OCT",
-  text:"Lorem Ipsum",
-  top:true
+
 };

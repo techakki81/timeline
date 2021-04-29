@@ -7,6 +7,8 @@ const LineCss = styled.div`
   width:100%;
   height: 5px;
   background: #d9d9d9;
+  position: absolute;
+  top: 55%;
 
   `
 

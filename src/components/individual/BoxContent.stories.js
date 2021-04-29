@@ -1,22 +1,19 @@
 import React from 'react';
 
-import Timeline   from './Timeline';
+import BoxContent   from './BoxContent';
 
 //👇 This default export determines where your story goes in the story list
 export default {
-  title: 'Timeline',
-  component: Timeline,
+  title: 'BoxContent',
+  component: BoxContent,
 };
 
 //👇 We create a “template” of how args map to rendering
-const Template = (args) => <Timeline {...args} />;
+const Template = (args) => <BoxContent {...args} />;
 
 export const FirstStory = Template.bind({});
-const card ={ 
-    date:Date.now(),
-    text:"Lorem Ipsum doloth"
-}
 
 FirstStory.args = {
-//  cards:[card]
+  text:"Lorem Ipsum",
+  top:true
 };
