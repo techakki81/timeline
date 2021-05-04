@@ -15,7 +15,7 @@ export default function Timeline() {
     const cards =[
         {
             date: new Date(2018, 11, 24),
-            text:"Lorem Ipsum doloth",
+            text:"Lorem Ipsum doloth2",
             positionTop:true
         },
         {

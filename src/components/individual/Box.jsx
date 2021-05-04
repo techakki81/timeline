@@ -5,6 +5,7 @@ import React from 'react'
 const BoxCss = styled.div`
   //TODO calculat tehe width
   width:17%;
+  position:relative;
   `
 
 export default function Box( {children}) {

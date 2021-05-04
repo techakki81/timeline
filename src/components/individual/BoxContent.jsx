@@ -10,6 +10,9 @@ position: absolute;
 // left: -77px;
 padding: 15px;
 
+${
+    ({top}) => top ? `top:10%;`:`bottom:0px;`
+} 
 &::before {
     content: "";
     position: absolute;
@@ -17,7 +20,7 @@ padding: 15px;
     transform: translateX(-50%);
     border: 10px solid transparent;
     ${
-        ({top}) => top ? `border-top-color: #00b0bd;bottom: -20px;`: `border-bottom-color: #00b0bd;top: -20px;bottom: 0%;`
+        ({top}) => top ? `border-top-color: #00b0bd;bottom: -20px;`: `border-bottom-color: #00b0bd;top: -20px;`
     }   
   `
 
