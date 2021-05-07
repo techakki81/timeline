@@ -8,6 +8,8 @@ background-color: #00b0bd;
 width: 180px;
 padding: 15px;
 
+// TO Talk. Normally you would have to write each selector differnect. with Styled comp i do not care
+
 ${
     ({positionTop}) => positionTop ? `transform:translateY(-50px);`:`transform: translateY(140px);`
  } 
