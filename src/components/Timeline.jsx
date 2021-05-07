@@ -22,7 +22,7 @@ export default function Timeline({cards}) {
         <TimelineCss>
             <FlexRow>
                 {
-                     cards.map( (card,index) => 
+                     cards.map( (card) => 
                         // key has to be there 
                         <Box key={card.date.toString()}> 
                             <DateCircle date ={card.date}></DateCircle>
