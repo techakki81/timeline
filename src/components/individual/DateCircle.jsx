@@ -7,9 +7,7 @@ const DateCircleCss = styled.div`
     border-radius: 100%;
     background: #fff;
     border: 2px solid #d9d9d9;
-    top: 47%;
-    left: 32%;
-    position: absolute;
+    transform: translateY(110px);
     & > p {
         margin:3px 0 0 15px;
       }

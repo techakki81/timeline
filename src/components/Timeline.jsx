@@ -3,14 +3,16 @@ import styled from 'styled-components/macro'
 import {Box, BoxContent, DateCircle,Line} from './individual'
 
 const TimelineCss = styled.div`
-  position:relative;
-  width:100%;
-  margin:auto;
-  height:300px;
-  display:flex;
-  
-`
+display: flex;
+width: 100%;
+flex-direction: column;
 
+`
+const FlexRow = styled.div`
+ display:flex;
+ flex-direction:row;
+ justify-content: space-between; 
+`
 export default function Timeline() {
     const cards =[
         {
@@ -35,21 +37,28 @@ export default function Timeline() {
         }
     ] 
 
-    console.log(cards)
+    
     if( !cards || cards.length===0)
        return "no data"
 
     return (
         <TimelineCss>
-        <Line></Line>
-        {
-            cards.map( card => 
-            <Box> 
-                <DateCircle date ={card.date}></DateCircle>
-                <BoxContent text={card.text} top={card.positionTop}></BoxContent>
-            </Box>
-                )
-        }  
+            <FlexRow>
+                {
+                     cards.map( (card,index) => 
+                        // key has to be there 
+                        <Box key={card.date.toString()}> 
+                            <DateCircle date ={card.date}></DateCircle>
+                            <BoxContent isOdd={index%2} text={card.text} top={card.positionTop}></BoxContent>
+                        </Box>
+                    )
+                }
+            </FlexRow>
+
+            <FlexRow>
+                <Line></Line>
+            </FlexRow>              
+          
         </TimelineCss>
     )
 }
