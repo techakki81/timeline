@@ -9,7 +9,7 @@ width: 180px;
 padding: 15px;
 
 ${
-    ({isOdd}) => isOdd ? `transform: translateY(140px);`:`transform:translateY(-50px);`
+    ({positionTop}) => positionTop ? `transform:translateY(-50px);`:`transform: translateY(140px);`
  } 
 &::before {
     content: "";
@@ -22,9 +22,9 @@ ${
     }       
   `
 
-export default function BoxContent( { isOdd,text, top}) {
+export default function BoxContent( { positionTop,text, top}) {
     return (
-        <BoxCss isOdd={isOdd} top={top}>
+        <BoxCss positionTop={positionTop} top={top}>
             <p>{text}</p>
         </BoxCss>
     )
