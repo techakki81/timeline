@@ -14,5 +14,5 @@ const Template = (args) => <Box {...args} />;
 export const FirstStory = Template.bind({});
 
 FirstStory.args = {
-
+  children:`test hello`
 };

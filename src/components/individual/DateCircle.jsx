@@ -15,11 +15,15 @@ const DateCircleCss = styled.div`
 
 
 export default function DateCircle({date}) {
+    console.log(`date fx`)
+    console.log(date)
+    console.log(date.getMonth())
+    console.log(date.getDay())
 
     const monthNames = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN",
         "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
     const month = monthNames[date.getMonth()];
-    const day = date.getDay()
+    const day = date.getDate()
    
     return (
         <DateCircleCss>
