@@ -22,12 +22,13 @@ function App() {
           date: new Date(2021, 1, 24),
           text:"Lorem Ipsum doloth",
           positionTop:false
-      },
-      {
-          date: new Date(2021, 1, 28),
-          text:"Lorem Ipsum doloth",
-          positionTop:true
-      }
+       }
+    //,
+    //   {
+    //       date: new Date(2021, 1, 28),
+    //       text:"Lorem Ipsum doloth",
+    //       positionTop:true
+    //   }
   ] 
   return (
       <Timeline cards={cards}></Timeline>

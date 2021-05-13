@@ -14,5 +14,5 @@ const Template = (args) => <Line {...args} />;
 export const FirstStory = Template.bind({});
 
 FirstStory.args = {
-  
+  color:"#d9d9d9"
 };

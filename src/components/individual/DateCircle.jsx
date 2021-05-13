@@ -6,10 +6,12 @@ const DateCircleCss = styled.div`
     height: 50px;
     border-radius: 100%;
     background: #fff;
-    border: 2px solid #d9d9d9;
-    transform: translateY(125px);
+    border: 2px solid #DAA520;
+    padding: 10px;
+    transform: translateY(133px);
     & > p {
         margin:3px 0 0 15px;
+        color: #DAA520;
       }
 `   
 
