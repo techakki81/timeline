@@ -7,7 +7,7 @@ const LineCss = styled.div`
   height: 5px;
   background: ${({color})=>color};
   `
-
+//hardcode the
 export default function Line({color='#DAA520'} ) {
     return (
         <LineCss color={color}>
